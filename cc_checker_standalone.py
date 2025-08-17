@@ -1,5 +1,5 @@
 import telebot
-import flask
+from flask import Flask
 import re
 import threading
 import time
