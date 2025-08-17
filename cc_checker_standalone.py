@@ -573,8 +573,19 @@ def mchk_handler(msg):
     threading.Thread(target=process_all).start()
 
 # ---------------- Start Bot ---------------- #
-print("🚀 Starting CC Checker Bot (Standalone Version)...")
-print("✅ No PHP server required!")
-print("✅ No XAMPP needed!")
-print("✅ Everything runs in Python!")
-bot.infinity_polling() 
+# ---------------- Start Bot ---------------- #
+app = Flask('')
+
+@app.route('/')
+def home():
+    return "Bot is alive!"
+
+def run():
+    app.run(host='0.0.0.0', port=8080)
+
+def keep_alive():
+    t = threading.Thread(target=run)
+    t.start()
+
+keep_alive()
+bot.infinity_polling()
