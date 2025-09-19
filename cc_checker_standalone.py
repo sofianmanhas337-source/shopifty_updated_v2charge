@@ -11,9 +11,9 @@ from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 from datetime import datetime
 
 # BOT Configuration
-BOT_TOKEN = '6351415129:AAFmlLXocNHEJ1zykE4m-JJOVBpVAGbmGzg'   
-MAIN_ADMIN_ID = 5103348494  # Your main admin ID
-ADMIN_IDS = [5103348494]  # Start with just you
+BOT_TOKEN = '8014667174:AAECmfhxJStBozv2yd8RjH_oxHKPgsMWt14'   
+MAIN_ADMIN_ID = 7708627627  # Your main admin ID
+ADMIN_IDS = [7708627627]  # Start with just you
 
 bot = telebot.TeleBot(BOT_TOKEN)
 
